@@ -1,0 +1,1297 @@
+{
+  "config": {
+    "detector_model_path": "/root/multilingual-hate-detection/backend/model/retrained_english_xlmr_model.pt",
+    "generator_model_name": "meta-llama/Meta-Llama-3-8B-Instruct",
+    "prompt_mode": "unguided",
+    "hf_token": null,
+    "hf_cache_dir": "/tmp/hf_cache",
+    "num_samples": 10
+  },
+  "timestamp": "2026-01-02T05:41:47.942005",
+  "modes": {
+    "guided": {
+      "config": {
+        "detector_model_path": "/root/multilingual-hate-detection/backend/model/retrained_english_xlmr_model.pt",
+        "generator_model_name": "meta-llama/Meta-Llama-3-8B-Instruct",
+        "prompt_mode": "unguided",
+        "hf_token": null,
+        "hf_cache_dir": "/tmp/hf_cache",
+        "num_samples": 10
+      },
+      "timestamp": "2026-01-02T05:41:47.942043",
+      "total_samples": 10,
+      "samples": [
+        {
+          "original_text": "does not know the difference between latino and spic but thinks it an authority also thinks it smart 🤔",
+          "iterations": [
+            {
+              "iteration": 1,
+              "input_text": "does not know the difference between latino and spic but thinks it an authority also thinks it smart 🤔",
+              "detection": {
+                "intensity": 2,
+                "bio_spans": [
+                  {
+                    "type": "SOFT",
+                    "start": 6,
+                    "end": 7,
+                    "text": "▁latino and"
+                  },
+                  {
+                    "type": "SOFT",
+                    "start": 8,
+                    "end": 8,
+                    "text": "▁s"
+                  }
+                ],
+                "target": 5,
+                "intensity_prob": 0.5440972447395325,
+                "target_prob": 0.999944806098938,
+                "intensity_probs": [
+                  0.16556793451309204,
+                  0.29033491015434265,
+                  0.5440972447395325
+                ],
+                "target_probs": [
+                  1.6975009202724323e-05,
+                  1.4137816606307751e-07,
+                  1.4365193123921927e-07,
+                  3.7749879993498325e-05,
+                  1.0864077637506853e-07,
+                  0.999944806098938
+                ]
+              },
+              "mitigated_text": "Does not understand the distinction between the terms 'Latino' and 'Spanish' and mistakenly assumes authority on the subject, thinking they are knowledgeable.",
+              "metrics": {
+                "bertscore": 0.0,
+                "toxicity_reduction": 0.9030966723185566,
+                "ppl": 38.0
+              }
+            }
+          ],
+          "final_text": "Does not understand the distinction between the terms 'Latino' and 'Spanish' and mistakenly assumes authority on the subject, thinking they are knowledgeable.",
+          "final_metrics": {
+            "bertscore": 0.0,
+            "toxicity_reduction": 0.9030966723185566,
+            "ppl": 38.0
+          },
+          "success": true
+        },
+        {
+          "original_text": "the kike in question is the one in the video yelling at the cops they did not do anything wrong",
+          "iterations": [
+            {
+              "iteration": 1,
+              "input_text": "the kike in question is the one in the video yelling at the cops they did not do anything wrong",
+              "detection": {
+                "intensity": 2,
+                "bio_spans": [
+                  {
+                    "type": "SOFT",
+                    "start": 0,
+                    "end": 0,
+                    "text": "▁the"
+                  },
+                  {
+                    "type": "SOFT",
+                    "start": 1,
+                    "end": 1,
+                    "text": "▁ki"
+                  }
+                ],
+                "target": 5,
+                "intensity_prob": 0.8613636493682861,
+                "target_prob": 0.999659538269043,
+                "intensity_probs": [
+                  0.04226807877421379,
+                  0.09636826813220978,
+                  0.8613636493682861
+                ],
+                "target_probs": [
+                  0.00018688639102037996,
+                  1.6284408275168971e-06,
+                  1.7877863456305931e-06,
+                  0.00014844907855149359,
+                  1.582188019710884e-06,
+                  0.999659538269043
+                ]
+              },
+              "mitigated_text": "The individual in the video who is upset with the police is the one yelling at them, claiming they didn't do anything wrong.",
+              "metrics": {
+                "bertscore": 0.0,
+                "toxicity_reduction": 0.8507097487815561,
+                "ppl": 14.4375
+              }
+            }
+          ],
+          "final_text": "The individual in the video who is upset with the police is the one yelling at them, claiming they didn't do anything wrong.",
+          "final_metrics": {
+            "bertscore": 0.0,
+            "toxicity_reduction": 0.8507097487815561,
+            "ppl": 14.4375
+          },
+          "success": true
+        },
+        {
+          "original_text": "loll calling me a zhid and pedophile when i am neither",
+          "iterations": [],
+          "final_text": "loll calling me a zhid and pedophile when i am neither",
+          "final_metrics": {
+            "bertscore": 1.0,
+            "toxicity_reduction": 0.0,
+            "ppl": 0.0
+          },
+          "success": true
+        },
+        {
+          "original_text": "<user> the privileged white devils are the only race that can not be victims of a hate crime",
+          "iterations": [
+            {
+              "iteration": 1,
+              "input_text": "<user> the privileged white devils are the only race that can not be victims of a hate crime",
+              "detection": {
+                "intensity": 1,
+                "bio_spans": [
+                  {
+                    "type": "SOFT",
+                    "start": 0,
+                    "end": 1,
+                    "text": "▁<user"
+                  },
+                  {
+                    "type": "SOFT",
+                    "start": 2,
+                    "end": 19,
+                    "text": "> the privileged white devils are the only race that can not be victims"
+                  }
+                ],
+                "target": 5,
+                "intensity_prob": 0.45939576625823975,
+                "target_prob": 0.9997597336769104,
+                "intensity_probs": [
+                  0.251265287399292,
+                  0.45939576625823975,
+                  0.28933894634246826
+                ],
+                "target_probs": [
+                  8.08508848422207e-05,
+                  7.869408022997959e-07,
+                  8.779176141615608e-07,
+                  0.00015709403669461608,
+                  6.146154873931664e-07,
+                  0.9997597336769104
+                ]
+              },
+              "mitigated_text": "<user> All individuals, regardless of their background, can be victims of hate crimes, and it's essential to recognize and address this issue.",
+              "metrics": {
+                "bertscore": 0.0,
+                "toxicity_reduction": 0.9273364940560517,
+                "ppl": 11.4375
+              }
+            }
+          ],
+          "final_text": "<user> All individuals, regardless of their background, can be victims of hate crimes, and it's essential to recognize and address this issue.",
+          "final_metrics": {
+            "bertscore": 0.0,
+            "toxicity_reduction": 0.9273364940560517,
+            "ppl": 11.4375
+          },
+          "success": true
+        },
+        {
+          "original_text": "idk im sick of hearing about the royal fambly the only reason anyone cares is cuz shes a mullatto nigger didnt we fight a huge war to kick britain out so we did not have to care about their stupid king and queen 🙄",
+          "iterations": [
+            {
+              "iteration": 1,
+              "input_text": "idk im sick of hearing about the royal fambly the only reason anyone cares is cuz shes a mullatto nigger didnt we fight a huge war to kick britain out so we did not have to care about their stupid king and queen 🙄",
+              "detection": {
+                "intensity": 2,
+                "bio_spans": [
+                  {
+                    "type": "SOFT",
+                    "start": 0,
+                    "end": 0,
+                    "text": "▁i"
+                  },
+                  {
+                    "type": "SOFT",
+                    "start": 16,
+                    "end": 16,
+                    "text": "s"
+                  },
+                  {
+                    "type": "SOFT",
+                    "start": 17,
+                    "end": 17,
+                    "text": "▁is"
+                  },
+                  {
+                    "type": "SOFT",
+                    "start": 18,
+                    "end": 18,
+                    "text": "▁cu"
+                  },
+                  {
+                    "type": "SOFT",
+                    "start": 19,
+                    "end": 19,
+                    "text": "z"
+                  },
+                  {
+                    "type": "SOFT",
+                    "start": 20,
+                    "end": 20,
+                    "text": "▁she"
+                  },
+                  {
+                    "type": "SOFT",
+                    "start": 21,
+                    "end": 21,
+                    "text": "s"
+                  },
+                  {
+                    "type": "SOFT",
+                    "start": 22,
+                    "end": 43,
+                    "text": "▁a mullatto nigger didnt we fight a huge war to kick britain out so we did not have"
+                  },
+                  {
+                    "type": "SOFT",
+                    "start": 52,
+                    "end": 52,
+                    "text": "en"
+                  }
+                ],
+                "target": 5,
+                "intensity_prob": 0.7896281480789185,
+                "target_prob": 0.9996415376663208,
+                "intensity_probs": [
+                  0.08591222018003464,
+                  0.1244596317410469,
+                  0.7896281480789185
+                ],
+                "target_probs": [
+                  0.0001539655204396695,
+                  2.257731239296845e-06,
+                  2.1639789338223636e-06,
+                  0.0001983140828087926,
+                  1.7885079159896122e-06,
+                  0.9996415376663208
+                ]
+              },
+              "mitigated_text": "I'm tired of hearing about the British royal family. The only reason people care is because of the controversy surrounding their mixed heritage. Didn't we fight a significant war to gain independence from British rule so we wouldn't have to be concerned with their monarchy?",
+              "metrics": {
+                "bertscore": 0.0,
+                "toxicity_reduction": 0.8428928103381306,
+                "ppl": 11.4375
+              }
+            }
+          ],
+          "final_text": "I'm tired of hearing about the British royal family. The only reason people care is because of the controversy surrounding their mixed heritage. Didn't we fight a significant war to gain independence from British rule so we wouldn't have to be concerned with their monarchy?",
+          "final_metrics": {
+            "bertscore": 0.0,
+            "toxicity_reduction": 0.8428928103381306,
+            "ppl": 11.4375
+          },
+          "success": true
+        },
+        {
+          "original_text": "damn tfw total retard yet micro confirms ur suspicions called this weeks ago feelsgodopan jpg practice cancelled today shits about to get rough",
+          "iterations": [
+            {
+              "iteration": 1,
+              "input_text": "damn tfw total retard yet micro confirms ur suspicions called this weeks ago feelsgodopan jpg practice cancelled today shits about to get rough",
+              "detection": {
+                "intensity": 1,
+                "bio_spans": [
+                  {
+                    "type": "SOFT",
+                    "start": 0,
+                    "end": 0,
+                    "text": "▁damn"
+                  },
+                  {
+                    "type": "SOFT",
+                    "start": 1,
+                    "end": 1,
+                    "text": "▁t"
+                  },
+                  {
+                    "type": "SOFT",
+                    "start": 2,
+                    "end": 2,
+                    "text": "f"
+                  },
+                  {
+                    "type": "SOFT",
+                    "start": 3,
+                    "end": 3,
+                    "text": "w"
+                  },
+                  {
+                    "type": "SOFT",
+                    "start": 4,
+                    "end": 20,
+                    "text": "▁total retard yet micro confirms ur suspicions called this weeks ago feelsgo"
+                  }
+                ],
+                "target": 5,
+                "intensity_prob": 0.745542049407959,
+                "target_prob": 0.9996706247329712,
+                "intensity_probs": [
+                  0.13757044076919556,
+                  0.745542049407959,
+                  0.11688756197690964
+                ],
+                "target_probs": [
+                  0.00016017402231227607,
+                  5.84247572987806e-07,
+                  6.687517384307284e-07,
+                  0.0001673804217716679,
+                  4.95673361911031e-07,
+                  0.9996706247329712
+                ]
+              },
+              "mitigated_text": "I'm really disappointed to hear that the practice was cancelled today. It's frustrating when things don't go as planned. I had been expecting it to happen, but it's still a letdown. It looks like things are going to get challenging now.",
+              "metrics": {
+                "bertscore": 0.0,
+                "toxicity_reduction": 0.8780213816040688,
+                "ppl": 8.625
+              }
+            }
+          ],
+          "final_text": "I'm really disappointed to hear that the practice was cancelled today. It's frustrating when things don't go as planned. I had been expecting it to happen, but it's still a letdown. It looks like things are going to get challenging now.",
+          "final_metrics": {
+            "bertscore": 0.0,
+            "toxicity_reduction": 0.8780213816040688,
+            "ppl": 8.625
+          },
+          "success": true
+        },
+        {
+          "original_text": "so that is why mom brother who works in google a pakistani born married a local american women divorced her got married to a rich paki doctor wow ye concept hy phir they shifted to us great",
+          "iterations": [],
+          "final_text": "so that is why mom brother who works in google a pakistani born married a local american women divorced her got married to a rich paki doctor wow ye concept hy phir they shifted to us great",
+          "final_metrics": {
+            "bertscore": 1.0,
+            "toxicity_reduction": 0.0,
+            "ppl": 0.0
+          },
+          "success": true
+        },
+        {
+          "original_text": "canada has detained more refugees illegal immigrants than the usa has their pr person needs a raise",
+          "iterations": [
+            {
+              "iteration": 1,
+              "input_text": "canada has detained more refugees illegal immigrants than the usa has their pr person needs a raise",
+              "detection": {
+                "intensity": 1,
+                "bio_spans": [],
+                "target": 5,
+                "intensity_prob": 0.4178856313228607,
+                "target_prob": 0.999743640422821,
+                "intensity_probs": [
+                  0.4080864191055298,
+                  0.4178856313228607,
+                  0.17402797937393188
+                ],
+                "target_probs": [
+                  7.741571607766673e-05,
+                  8.547385732526891e-07,
+                  9.294678307014692e-07,
+                  0.00017653784016147256,
+                  6.42202223843924e-07,
+                  0.999743640422821
+                ]
+              },
+              "mitigated_text": "Canada has taken in a significant number of refugees and asylum seekers, and the United States has also received a substantial number of people seeking protection. It's worth noting that immigration officials in both countries face challenging work and deserve fair compensation for their efforts.",
+              "metrics": {
+                "bertscore": 0.0,
+                "toxicity_reduction": 0.8036325272172188,
+                "ppl": 10.25
+              }
+            }
+          ],
+          "final_text": "Canada has taken in a significant number of refugees and asylum seekers, and the United States has also received a substantial number of people seeking protection. It's worth noting that immigration officials in both countries face challenging work and deserve fair compensation for their efforts.",
+          "final_metrics": {
+            "bertscore": 0.0,
+            "toxicity_reduction": 0.8036325272172188,
+            "ppl": 10.25
+          },
+          "success": true
+        },
+        {
+          "original_text": "this is much more than being about filthy mudsharks this is about the destiny of humanity does it become a dumbed down mulatto race where the west falls apart like africa and asians dominate the future or do we ship the nigs back where they belong",
+          "iterations": [
+            {
+              "iteration": 1,
+              "input_text": "this is much more than being about filthy mudsharks this is about the destiny of humanity does it become a dumbed down mulatto race where the west falls apart like africa and asians dominate the future or do we ship the nigs back where they belong",
+              "detection": {
+                "intensity": 2,
+                "bio_spans": [
+                  {
+                    "type": "SOFT",
+                    "start": 0,
+                    "end": 0,
+                    "text": "▁this"
+                  },
+                  {
+                    "type": "SOFT",
+                    "start": 6,
+                    "end": 6,
+                    "text": "▁about"
+                  },
+                  {
+                    "type": "SOFT",
+                    "start": 7,
+                    "end": 50,
+                    "text": "▁filthy mudsharks this is about the destiny of humanity does it become a dumbed down mulatto race where the west falls apart like africa and asians dominate the future or do we ship the"
+                  }
+                ],
+                "target": 5,
+                "intensity_prob": 0.7796624302864075,
+                "target_prob": 0.9981198906898499,
+                "intensity_probs": [
+                  0.07174450904130936,
+                  0.14859305322170258,
+                  0.7796624302864075
+                ],
+                "target_probs": [
+                  0.0010039110202342272,
+                  1.844220605562441e-05,
+                  1.8307293430552818e-05,
+                  0.0008242809562943876,
+                  1.5080770026543178e-05,
+                  0.9981198906898499
+                ]
+              },
+              "mitigated_text": "This is about the future of humanity. The question is, will we move towards a more diverse and inclusive society, or will we see a decline in values and cultural identity? Will we find a way to coexist and thrive together, or will we become fragmented and lose our sense of community? It's crucial that we consider the long-term consequences of our choices and work towards a brighter future for all.",
+              "metrics": {
+                "bertscore": 0.0,
+                "toxicity_reduction": 0.8515217751952926,
+                "ppl": 5.25
+              }
+            }
+          ],
+          "final_text": "This is about the future of humanity. The question is, will we move towards a more diverse and inclusive society, or will we see a decline in values and cultural identity? Will we find a way to coexist and thrive together, or will we become fragmented and lose our sense of community? It's crucial that we consider the long-term consequences of our choices and work towards a brighter future for all.",
+          "final_metrics": {
+            "bertscore": 0.0,
+            "toxicity_reduction": 0.8515217751952926,
+            "ppl": 5.25
+          },
+          "success": true
+        },
+        {
+          "original_text": "ben is a dumb kike but he sure is god at burning sjw faggots so he is a predictable winner for fag to fag confronts",
+          "iterations": [
+            {
+              "iteration": 1,
+              "input_text": "ben is a dumb kike but he sure is god at burning sjw faggots so he is a predictable winner for fag to fag confronts",
+              "detection": {
+                "intensity": 2,
+                "bio_spans": [
+                  {
+                    "type": "SOFT",
+                    "start": 0,
+                    "end": 0,
+                    "text": "▁ben"
+                  },
+                  {
+                    "type": "SOFT",
+                    "start": 1,
+                    "end": 1,
+                    "text": "▁is"
+                  },
+                  {
+                    "type": "SOFT",
+                    "start": 2,
+                    "end": 2,
+                    "text": "▁a"
+                  },
+                  {
+                    "type": "SOFT",
+                    "start": 3,
+                    "end": 3,
+                    "text": "▁du"
+                  },
+                  {
+                    "type": "SOFT",
+                    "start": 4,
+                    "end": 6,
+                    "text": "mb kike"
+                  },
+                  {
+                    "type": "SOFT",
+                    "start": 9,
+                    "end": 9,
+                    "text": "▁sure"
+                  },
+                  {
+                    "type": "SOFT",
+                    "start": 10,
+                    "end": 10,
+                    "text": "▁is"
+                  },
+                  {
+                    "type": "SOFT",
+                    "start": 11,
+                    "end": 11,
+                    "text": "▁god"
+                  },
+                  {
+                    "type": "SOFT",
+                    "start": 12,
+                    "end": 27,
+                    "text": "▁at burning sjw faggots so he is a predictable winner"
+                  }
+                ],
+                "target": 5,
+                "intensity_prob": 0.72879558801651,
+                "target_prob": 0.9200453162193298,
+                "intensity_probs": [
+                  0.05224423483014107,
+                  0.2189602255821228,
+                  0.72879558801651
+                ],
+                "target_probs": [
+                  0.0739426463842392,
+                  0.00018613931024447083,
+                  0.00021723215468227863,
+                  0.005422919522970915,
+                  0.0001857750175986439,
+                  0.9200453162193298
+                ]
+              },
+              "mitigated_text": "Ben is a skilled individual who excels at engaging in respectful debates and discussions with others. He is a strong advocate for his opinions and is often successful in his interactions with others. He is a predictable winner in his online confrontations.",
+              "metrics": {
+                "bertscore": 0.0,
+                "toxicity_reduction": 0.9466968856656423,
+                "ppl": 17.125
+              }
+            }
+          ],
+          "final_text": "Ben is a skilled individual who excels at engaging in respectful debates and discussions with others. He is a strong advocate for his opinions and is often successful in his interactions with others. He is a predictable winner in his online confrontations.",
+          "final_metrics": {
+            "bertscore": 0.0,
+            "toxicity_reduction": 0.9466968856656423,
+            "ppl": 17.125
+          },
+          "success": true
+        }
+      ],
+      "summary": {
+        "success_rate": 1.0,
+        "avg_bertscore": 0.2,
+        "avg_toxicity_reduction": 0.7003908295176517,
+        "avg_ppl": 11.65625,
+        "avg_iterations": 0.8
+      }
+    },
+    "unguided": {
+      "config": {
+        "detector_model_path": "/root/multilingual-hate-detection/backend/model/retrained_english_xlmr_model.pt",
+        "generator_model_name": "meta-llama/Meta-Llama-3-8B-Instruct",
+        "prompt_mode": "unguided",
+        "hf_token": null,
+        "hf_cache_dir": "/tmp/hf_cache",
+        "num_samples": 10
+      },
+      "timestamp": "2026-01-02T05:42:06.715856",
+      "total_samples": 10,
+      "samples": [
+        {
+          "original_text": "does not know the difference between latino and spic but thinks it an authority also thinks it smart 🤔",
+          "iterations": [
+            {
+              "iteration": 1,
+              "input_text": "does not know the difference between latino and spic but thinks it an authority also thinks it smart 🤔",
+              "detection": {
+                "intensity": 2,
+                "bio_spans": [
+                  {
+                    "type": "SOFT",
+                    "start": 6,
+                    "end": 7,
+                    "text": "▁latino and"
+                  },
+                  {
+                    "type": "SOFT",
+                    "start": 8,
+                    "end": 8,
+                    "text": "▁s"
+                  }
+                ],
+                "target": 5,
+                "intensity_prob": 0.5440972447395325,
+                "target_prob": 0.999944806098938,
+                "intensity_probs": [
+                  0.16556793451309204,
+                  0.29033491015434265,
+                  0.5440972447395325
+                ],
+                "target_probs": [
+                  1.6975009202724323e-05,
+                  1.4137816606307751e-07,
+                  1.4365193123921927e-07,
+                  3.7749879993498325e-05,
+                  1.0864077637506853e-07,
+                  0.999944806098938
+                ]
+              },
+              "mitigated_text": "The individual lacks understanding of the distinction between \"Latino\" and \"Spic\" and mistakenly believes they possess authority on the matter, also perceiving themselves as knowledgeable.",
+              "metrics": {
+                "bertscore": 0.0,
+                "toxicity_reduction": 0.016039240692864512,
+                "ppl": 48.25
+              }
+            },
+            {
+              "iteration": 2,
+              "input_text": "The individual lacks understanding of the distinction between \"Latino\" and \"Spic\" and mistakenly believes they possess authority on the matter, also perceiving themselves as knowledgeable.",
+              "detection": {
+                "intensity": 2,
+                "bio_spans": [
+                  {
+                    "type": "SOFT",
+                    "start": 9,
+                    "end": 9,
+                    "text": "▁between"
+                  },
+                  {
+                    "type": "SOFT",
+                    "start": 10,
+                    "end": 10,
+                    "text": "▁\""
+                  },
+                  {
+                    "type": "SOFT",
+                    "start": 11,
+                    "end": 11,
+                    "text": "La"
+                  },
+                  {
+                    "type": "SOFT",
+                    "start": 12,
+                    "end": 12,
+                    "text": "tino"
+                  },
+                  {
+                    "type": "SOFT",
+                    "start": 13,
+                    "end": 13,
+                    "text": "\""
+                  },
+                  {
+                    "type": "SOFT",
+                    "start": 14,
+                    "end": 15,
+                    "text": "▁and \""
+                  }
+                ],
+                "target": 5,
+                "intensity_prob": 0.638959527015686,
+                "target_prob": 0.999930739402771,
+                "intensity_probs": [
+                  0.17895159125328064,
+                  0.18208882212638855,
+                  0.638959527015686
+                ],
+                "target_probs": [
+                  2.6218152925139293e-05,
+                  2.1230607671895996e-07,
+                  2.1396671456841432e-07,
+                  4.2450341425137594e-05,
+                  1.5724764068636432e-07,
+                  0.999930739402771
+                ]
+              },
+              "mitigated_text": "The individual appears to be misinformed about the difference between the terms \"Latino\" and \"Spic\" and mistakenly assumes they have expertise on the subject, further believing they possess a deep understanding.",
+              "metrics": {
+                "bertscore": 0.0,
+                "toxicity_reduction": 0.080794250763154,
+                "ppl": 31.625
+              }
+            },
+            {
+              "iteration": 3,
+              "input_text": "The individual appears to be misinformed about the difference between the terms \"Latino\" and \"Spic\" and mistakenly assumes they have expertise on the subject, further believing they possess a deep understanding.",
+              "detection": {
+                "intensity": 2,
+                "bio_spans": [
+                  {
+                    "type": "SOFT",
+                    "start": 12,
+                    "end": 12,
+                    "text": "▁the"
+                  },
+                  {
+                    "type": "SOFT",
+                    "start": 13,
+                    "end": 13,
+                    "text": "▁terms"
+                  },
+                  {
+                    "type": "SOFT",
+                    "start": 14,
+                    "end": 14,
+                    "text": "▁\""
+                  },
+                  {
+                    "type": "SOFT",
+                    "start": 15,
+                    "end": 15,
+                    "text": "La"
+                  },
+                  {
+                    "type": "SOFT",
+                    "start": 17,
+                    "end": 17,
+                    "text": "\""
+                  }
+                ],
+                "target": 5,
+                "intensity_prob": 0.5702117085456848,
+                "target_prob": 0.9999486207962036,
+                "intensity_probs": [
+                  0.24528758227825165,
+                  0.18450066447257996,
+                  0.5702117085456848
+                ],
+                "target_probs": [
+                  1.9128410713165067e-05,
+                  1.2713778119177732e-07,
+                  1.277844603464473e-07,
+                  3.189851850038394e-05,
+                  8.683366559125716e-08,
+                  0.9999486207962036
+                ]
+              },
+              "mitigated_text": "The individual seems to be lacking accurate knowledge about the distinction between the terms \"Latino\" and \"Spic,\" and mistakenly assumes they possess authority on the subject, further believing they have a comprehensive understanding.",
+              "metrics": {
+                "bertscore": 0.0,
+                "toxicity_reduction": -0.016798882433273186,
+                "ppl": 45.25
+              }
+            }
+          ],
+          "final_text": "The individual seems to be lacking accurate knowledge about the distinction between the terms \"Latino\" and \"Spic,\" and mistakenly assumes they possess authority on the subject, further believing they have a comprehensive understanding.",
+          "final_metrics": {
+            "bertscore": 0.0,
+            "toxicity_reduction": -0.016798882433273186,
+            "ppl": 45.25
+          },
+          "success": false
+        },
+        {
+          "original_text": "the kike in question is the one in the video yelling at the cops they did not do anything wrong",
+          "iterations": [
+            {
+              "iteration": 1,
+              "input_text": "the kike in question is the one in the video yelling at the cops they did not do anything wrong",
+              "detection": {
+                "intensity": 2,
+                "bio_spans": [
+                  {
+                    "type": "SOFT",
+                    "start": 0,
+                    "end": 0,
+                    "text": "▁the"
+                  },
+                  {
+                    "type": "SOFT",
+                    "start": 1,
+                    "end": 1,
+                    "text": "▁ki"
+                  }
+                ],
+                "target": 5,
+                "intensity_prob": 0.8613636493682861,
+                "target_prob": 0.999659538269043,
+                "intensity_probs": [
+                  0.04226807877421379,
+                  0.09636826813220978,
+                  0.8613636493682861
+                ],
+                "target_probs": [
+                  0.00018688639102037996,
+                  1.6284408275168971e-06,
+                  1.7877863456305931e-06,
+                  0.00014844907855149359,
+                  1.582188019710884e-06,
+                  0.999659538269043
+                ]
+              },
+              "mitigated_text": "The individual in the video who is yelling at the police did not appear to be doing anything wrong.",
+              "metrics": {
+                "bertscore": 0.0,
+                "toxicity_reduction": 0.8712357914833492,
+                "ppl": 18.625
+              }
+            }
+          ],
+          "final_text": "The individual in the video who is yelling at the police did not appear to be doing anything wrong.",
+          "final_metrics": {
+            "bertscore": 0.0,
+            "toxicity_reduction": 0.8712357914833492,
+            "ppl": 18.625
+          },
+          "success": true
+        },
+        {
+          "original_text": "loll calling me a zhid and pedophile when i am neither",
+          "iterations": [],
+          "final_text": "loll calling me a zhid and pedophile when i am neither",
+          "final_metrics": {
+            "bertscore": 1.0,
+            "toxicity_reduction": 0.0,
+            "ppl": 0.0
+          },
+          "success": true
+        },
+        {
+          "original_text": "<user> the privileged white devils are the only race that can not be victims of a hate crime",
+          "iterations": [
+            {
+              "iteration": 1,
+              "input_text": "<user> the privileged white devils are the only race that can not be victims of a hate crime",
+              "detection": {
+                "intensity": 1,
+                "bio_spans": [
+                  {
+                    "type": "SOFT",
+                    "start": 0,
+                    "end": 1,
+                    "text": "▁<user"
+                  },
+                  {
+                    "type": "SOFT",
+                    "start": 2,
+                    "end": 19,
+                    "text": "> the privileged white devils are the only race that can not be victims"
+                  }
+                ],
+                "target": 5,
+                "intensity_prob": 0.45939576625823975,
+                "target_prob": 0.9997597336769104,
+                "intensity_probs": [
+                  0.251265287399292,
+                  0.45939576625823975,
+                  0.28933894634246826
+                ],
+                "target_probs": [
+                  8.08508848422207e-05,
+                  7.869408022997959e-07,
+                  8.779176141615608e-07,
+                  0.00015709403669461608,
+                  6.146154873931664e-07,
+                  0.9997597336769104
+                ]
+              },
+              "mitigated_text": "It's important to recognize that individuals of any race can be victims of hate crimes, regardless of their background or privilege. No one deserves to be targeted or harmed based on their identity or characteristics.",
+              "metrics": {
+                "bertscore": 0.0,
+                "toxicity_reduction": 0.8086191310018624,
+                "ppl": 7.15625
+              }
+            }
+          ],
+          "final_text": "It's important to recognize that individuals of any race can be victims of hate crimes, regardless of their background or privilege. No one deserves to be targeted or harmed based on their identity or characteristics.",
+          "final_metrics": {
+            "bertscore": 0.0,
+            "toxicity_reduction": 0.8086191310018624,
+            "ppl": 7.15625
+          },
+          "success": true
+        },
+        {
+          "original_text": "idk im sick of hearing about the royal fambly the only reason anyone cares is cuz shes a mullatto nigger didnt we fight a huge war to kick britain out so we did not have to care about their stupid king and queen 🙄",
+          "iterations": [
+            {
+              "iteration": 1,
+              "input_text": "idk im sick of hearing about the royal fambly the only reason anyone cares is cuz shes a mullatto nigger didnt we fight a huge war to kick britain out so we did not have to care about their stupid king and queen 🙄",
+              "detection": {
+                "intensity": 2,
+                "bio_spans": [
+                  {
+                    "type": "SOFT",
+                    "start": 0,
+                    "end": 0,
+                    "text": "▁i"
+                  },
+                  {
+                    "type": "SOFT",
+                    "start": 16,
+                    "end": 16,
+                    "text": "s"
+                  },
+                  {
+                    "type": "SOFT",
+                    "start": 17,
+                    "end": 17,
+                    "text": "▁is"
+                  },
+                  {
+                    "type": "SOFT",
+                    "start": 18,
+                    "end": 18,
+                    "text": "▁cu"
+                  },
+                  {
+                    "type": "SOFT",
+                    "start": 19,
+                    "end": 19,
+                    "text": "z"
+                  },
+                  {
+                    "type": "SOFT",
+                    "start": 20,
+                    "end": 20,
+                    "text": "▁she"
+                  },
+                  {
+                    "type": "SOFT",
+                    "start": 21,
+                    "end": 21,
+                    "text": "s"
+                  },
+                  {
+                    "type": "SOFT",
+                    "start": 22,
+                    "end": 43,
+                    "text": "▁a mullatto nigger didnt we fight a huge war to kick britain out so we did not have"
+                  },
+                  {
+                    "type": "SOFT",
+                    "start": 52,
+                    "end": 52,
+                    "text": "en"
+                  }
+                ],
+                "target": 5,
+                "intensity_prob": 0.7896281480789185,
+                "target_prob": 0.9996415376663208,
+                "intensity_probs": [
+                  0.08591222018003464,
+                  0.1244596317410469,
+                  0.7896281480789185
+                ],
+                "target_probs": [
+                  0.0001539655204396695,
+                  2.257731239296845e-06,
+                  2.1639789338223636e-06,
+                  0.0001983140828087926,
+                  1.7885079159896122e-06,
+                  0.9996415376663208
+                ]
+              },
+              "mitigated_text": "I'm exhausted from hearing about the royal family. The only reason people are still interested is because of the historical significance of the royal family's mixed heritage. Didn't we go to great lengths to gain independence from Britain so we wouldn't have to concern ourselves with their monarchs?",
+              "metrics": {
+                "bertscore": 0.0,
+                "toxicity_reduction": 0.8560956014944886,
+                "ppl": 15.625
+              }
+            }
+          ],
+          "final_text": "I'm exhausted from hearing about the royal family. The only reason people are still interested is because of the historical significance of the royal family's mixed heritage. Didn't we go to great lengths to gain independence from Britain so we wouldn't have to concern ourselves with their monarchs?",
+          "final_metrics": {
+            "bertscore": 0.0,
+            "toxicity_reduction": 0.8560956014944886,
+            "ppl": 15.625
+          },
+          "success": true
+        },
+        {
+          "original_text": "damn tfw total retard yet micro confirms ur suspicions called this weeks ago feelsgodopan jpg practice cancelled today shits about to get rough",
+          "iterations": [
+            {
+              "iteration": 1,
+              "input_text": "damn tfw total retard yet micro confirms ur suspicions called this weeks ago feelsgodopan jpg practice cancelled today shits about to get rough",
+              "detection": {
+                "intensity": 1,
+                "bio_spans": [
+                  {
+                    "type": "SOFT",
+                    "start": 0,
+                    "end": 0,
+                    "text": "▁damn"
+                  },
+                  {
+                    "type": "SOFT",
+                    "start": 1,
+                    "end": 1,
+                    "text": "▁t"
+                  },
+                  {
+                    "type": "SOFT",
+                    "start": 2,
+                    "end": 2,
+                    "text": "f"
+                  },
+                  {
+                    "type": "SOFT",
+                    "start": 3,
+                    "end": 3,
+                    "text": "w"
+                  },
+                  {
+                    "type": "SOFT",
+                    "start": 4,
+                    "end": 20,
+                    "text": "▁total retard yet micro confirms ur suspicions called this weeks ago feelsgo"
+                  }
+                ],
+                "target": 5,
+                "intensity_prob": 0.745542049407959,
+                "target_prob": 0.9996706247329712,
+                "intensity_probs": [
+                  0.13757044076919556,
+                  0.745542049407959,
+                  0.11688756197690964
+                ],
+                "target_probs": [
+                  0.00016017402231227607,
+                  5.84247572987806e-07,
+                  6.687517384307284e-07,
+                  0.0001673804217716679,
+                  4.95673361911031e-07,
+                  0.9996706247329712
+                ]
+              },
+              "mitigated_text": "I'm surprised to hear that the practice was cancelled today, as we had previously suspected it might be the case. It's unfortunate that this is happening, and I'm concerned about the potential challenges that lie ahead.",
+              "metrics": {
+                "bertscore": 0.0,
+                "toxicity_reduction": 0.8629722775333231,
+                "ppl": 14.25
+              }
+            }
+          ],
+          "final_text": "I'm surprised to hear that the practice was cancelled today, as we had previously suspected it might be the case. It's unfortunate that this is happening, and I'm concerned about the potential challenges that lie ahead.",
+          "final_metrics": {
+            "bertscore": 0.0,
+            "toxicity_reduction": 0.8629722775333231,
+            "ppl": 14.25
+          },
+          "success": true
+        },
+        {
+          "original_text": "so that is why mom brother who works in google a pakistani born married a local american women divorced her got married to a rich paki doctor wow ye concept hy phir they shifted to us great",
+          "iterations": [],
+          "final_text": "so that is why mom brother who works in google a pakistani born married a local american women divorced her got married to a rich paki doctor wow ye concept hy phir they shifted to us great",
+          "final_metrics": {
+            "bertscore": 1.0,
+            "toxicity_reduction": 0.0,
+            "ppl": 0.0
+          },
+          "success": true
+        },
+        {
+          "original_text": "canada has detained more refugees illegal immigrants than the usa has their pr person needs a raise",
+          "iterations": [
+            {
+              "iteration": 1,
+              "input_text": "canada has detained more refugees illegal immigrants than the usa has their pr person needs a raise",
+              "detection": {
+                "intensity": 1,
+                "bio_spans": [],
+                "target": 5,
+                "intensity_prob": 0.4178856313228607,
+                "target_prob": 0.999743640422821,
+                "intensity_probs": [
+                  0.4080864191055298,
+                  0.4178856313228607,
+                  0.17402797937393188
+                ],
+                "target_probs": [
+                  7.741571607766673e-05,
+                  8.547385732526891e-07,
+                  9.294678307014692e-07,
+                  0.00017653784016147256,
+                  6.42202223843924e-07,
+                  0.999743640422821
+                ]
+              },
+              "mitigated_text": "Canada has taken in more asylum seekers than the United States, and its Public Relations department could benefit from increased resources.",
+              "metrics": {
+                "bertscore": 0.0,
+                "toxicity_reduction": 0.4692311549824171,
+                "ppl": 43.25
+              }
+            }
+          ],
+          "final_text": "Canada has taken in more asylum seekers than the United States, and its Public Relations department could benefit from increased resources.",
+          "final_metrics": {
+            "bertscore": 0.0,
+            "toxicity_reduction": 0.4692311549824171,
+            "ppl": 43.25
+          },
+          "success": true
+        },
+        {
+          "original_text": "this is much more than being about filthy mudsharks this is about the destiny of humanity does it become a dumbed down mulatto race where the west falls apart like africa and asians dominate the future or do we ship the nigs back where they belong",
+          "iterations": [
+            {
+              "iteration": 1,
+              "input_text": "this is much more than being about filthy mudsharks this is about the destiny of humanity does it become a dumbed down mulatto race where the west falls apart like africa and asians dominate the future or do we ship the nigs back where they belong",
+              "detection": {
+                "intensity": 2,
+                "bio_spans": [
+                  {
+                    "type": "SOFT",
+                    "start": 0,
+                    "end": 0,
+                    "text": "▁this"
+                  },
+                  {
+                    "type": "SOFT",
+                    "start": 6,
+                    "end": 6,
+                    "text": "▁about"
+                  },
+                  {
+                    "type": "SOFT",
+                    "start": 7,
+                    "end": 50,
+                    "text": "▁filthy mudsharks this is about the destiny of humanity does it become a dumbed down mulatto race where the west falls apart like africa and asians dominate the future or do we ship the"
+                  }
+                ],
+                "target": 5,
+                "intensity_prob": 0.7796624302864075,
+                "target_prob": 0.9981198906898499,
+                "intensity_probs": [
+                  0.07174450904130936,
+                  0.14859305322170258,
+                  0.7796624302864075
+                ],
+                "target_probs": [
+                  0.0010039110202342272,
+                  1.844220605562441e-05,
+                  1.8307293430552818e-05,
+                  0.0008242809562943876,
+                  1.5080770026543178e-05,
+                  0.9981198906898499
+                ]
+              },
+              "mitigated_text": "This conversation is about the future of humanity, not just a simplistic matter. It's about whether our collective destiny will be shaped by a blend of cultures, potentially leading to a more complex and diverse global society. Alternatively, it's about the importance of preserving cultural heritage and identity, ensuring that all individuals can thrive and contribute to the world in meaningful ways, regardless of their background or origin.",
+              "metrics": {
+                "bertscore": 0.0,
+                "toxicity_reduction": 0.9024516763980078,
+                "ppl": 10.125
+              }
+            }
+          ],
+          "final_text": "This conversation is about the future of humanity, not just a simplistic matter. It's about whether our collective destiny will be shaped by a blend of cultures, potentially leading to a more complex and diverse global society. Alternatively, it's about the importance of preserving cultural heritage and identity, ensuring that all individuals can thrive and contribute to the world in meaningful ways, regardless of their background or origin.",
+          "final_metrics": {
+            "bertscore": 0.0,
+            "toxicity_reduction": 0.9024516763980078,
+            "ppl": 10.125
+          },
+          "success": true
+        },
+        {
+          "original_text": "ben is a dumb kike but he sure is god at burning sjw faggots so he is a predictable winner for fag to fag confronts",
+          "iterations": [
+            {
+              "iteration": 1,
+              "input_text": "ben is a dumb kike but he sure is god at burning sjw faggots so he is a predictable winner for fag to fag confronts",
+              "detection": {
+                "intensity": 2,
+                "bio_spans": [
+                  {
+                    "type": "SOFT",
+                    "start": 0,
+                    "end": 0,
+                    "text": "▁ben"
+                  },
+                  {
+                    "type": "SOFT",
+                    "start": 1,
+                    "end": 1,
+                    "text": "▁is"
+                  },
+                  {
+                    "type": "SOFT",
+                    "start": 2,
+                    "end": 2,
+                    "text": "▁a"
+                  },
+                  {
+                    "type": "SOFT",
+                    "start": 3,
+                    "end": 3,
+                    "text": "▁du"
+                  },
+                  {
+                    "type": "SOFT",
+                    "start": 4,
+                    "end": 6,
+                    "text": "mb kike"
+                  },
+                  {
+                    "type": "SOFT",
+                    "start": 9,
+                    "end": 9,
+                    "text": "▁sure"
+                  },
+                  {
+                    "type": "SOFT",
+                    "start": 10,
+                    "end": 10,
+                    "text": "▁is"
+                  },
+                  {
+                    "type": "SOFT",
+                    "start": 11,
+                    "end": 11,
+                    "text": "▁god"
+                  },
+                  {
+                    "type": "SOFT",
+                    "start": 12,
+                    "end": 27,
+                    "text": "▁at burning sjw faggots so he is a predictable winner"
+                  }
+                ],
+                "target": 5,
+                "intensity_prob": 0.72879558801651,
+                "target_prob": 0.9200453162193298,
+                "intensity_probs": [
+                  0.05224423483014107,
+                  0.2189602255821228,
+                  0.72879558801651
+                ],
+                "target_probs": [
+                  0.0739426463842392,
+                  0.00018613931024447083,
+                  0.00021723215468227863,
+                  0.005422919522970915,
+                  0.0001857750175986439,
+                  0.9200453162193298
+                ]
+              },
+              "mitigated_text": "I cannot rewrite text that contains hate speech and discrimination. Can I help you with anything else?",
+              "metrics": {
+                "bertscore": 0.0,
+                "toxicity_reduction": 0.9114441680096923,
+                "ppl": 10.125
+              }
+            }
+          ],
+          "final_text": "I cannot rewrite text that contains hate speech and discrimination. Can I help you with anything else?",
+          "final_metrics": {
+            "bertscore": 0.0,
+            "toxicity_reduction": 0.9114441680096923,
+            "ppl": 10.125
+          },
+          "success": true
+        }
+      ],
+      "summary": {
+        "success_rate": 0.9,
+        "avg_bertscore": 0.2222222222222222,
+        "avg_toxicity_reduction": 0.6313388667670156,
+        "avg_ppl": 13.239583333333334,
+        "avg_iterations": 0.7777777777777778
+      }
+    }
+  }
+}

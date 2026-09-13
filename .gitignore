@@ -1,0 +1,115 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+venv/
+env/
+ENV/
+
+# Secrets (OpenAI, Hugging Face, etc.)
+.env
+.env.*
+!.env.example
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# PyTorch
+*.pth
+*.pt.bak
+
+# Logs
+*.log
+logs/
+
+# Temporary files
+*.tmp
+*.temp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Large model files (models stored separately due to size limits)
+*.pt
+*.bin
+*.safetensors
+
+# Experiment tracking
+wandb/
+mlruns/
+
+# Cache
+.cache/
+*.cache
+
+# LaTeX build files
+*.aux
+*.bbl
+*.blg
+*.out
+*.log
+*.synctex.gz
+*.fdb_latexmk
+*.fls
+
+# Local / machine-specific symlinks (do not commit)
+model_upload
+tmp_link
+
+# --- Public release: private / local-only ---
+# Human evaluation raw responses (forms, spreadsheets, per-rater rows)
+*.xlsx
+*.xls
+docs/ACL*Human Eval*
+**/human_eval_form_ready*.csv
+**/human_eval_*randomized*.csv
+docs/human_eval_reclassified*.csv
+docs/human_eval_60_items_FINAL_ELITE*.csv
+human_eval/samples_for_form*.csv
+
+# Internal backups (keep locally under archive/)
+archive/*.tar.gz
+archive/backup_file_list.txt
+
+# Maintainer-only dev log
+WORK_LOG.md
+
+# Legacy experiment dumps (see experiments/archive/README.md)
+experiments/archive/*
+!experiments/archive/README.md
+
+# Local copies / reference PDFs under emnlp2026/paper (not the tracked Overleaf build)
+emnlp2026/paper/main.pdf
+emnlp2026/paper/emnlp2026.pdf
+emnlp2026/paper/test_human60.pdf
+emnlp2026/paper/Detoxification*.pdf
+emnlp2026/paper/Fluid*.pdf
+emnlp2026/paper/Pattern*.pdf
+emnlp2026/paper/Read_the_Room*.pdf

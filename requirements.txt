@@ -1,0 +1,22 @@
+# Core ML Libraries
+torch>=1.12.0
+transformers>=4.21.0
+datasets>=2.5.0
+scikit-learn>=1.1.0
+numpy>=1.21.0
+pandas>=1.4.0
+
+# Progress and Utilities
+tqdm>=4.64.0
+matplotlib>=3.5.0
+seaborn>=0.11.0
+
+# Optional: For advanced features
+# pytorch-crf>=1.1.0  # Uncomment for CRF support
+# wandb>=0.13.0       # Uncomment for experiment tracking
+
+# Multi-model auto-eval (open + commercial generators)
+# openai>=1.0.0       # For --api_provider openai
+# anthropic>=0.18.0  # For --api_provider anthropic
+bert-score>=0.3.13    # pilot / oracle proxy (BERTScore F1); augment_pilot_candidates_scored
+# google-api-python-client  # For Perspective API
