@@ -1,5 +1,22 @@
 # Multilingual Hate Speech Detection & Guided Detoxification
 
+**Awareness-Enhanced Guidance for Iterative Safeguard**
+
+[![arXiv](https://img.shields.io/badge/arXiv-2607.17713-b31b1b)](https://arxiv.org/abs/2607.17713)
+
+AEGIS is an exploratory framework for studying span-guided multilingual text
+detoxification across English, Mandarin Chinese, and Korean. It separates a
+span-level detector from frozen generator backbones so that the effect of
+harmful-span, intensity, and target guidance can be examined without treating
+the framework as a state-of-the-art claim.
+
+| Resource | Status |
+|---|---|
+| Paper | [arXiv:2607.17713](https://arxiv.org/abs/2607.17713) |
+| Code | Detector training and guided-generation pipeline available |
+| Data | Use the official upstream datasets described in [DATA.md](DATA.md) |
+| License | [MIT](LICENSE) for code; upstream terms apply to data and models |
+
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 Research code for multilingual span-level hate-speech detection and controlled
